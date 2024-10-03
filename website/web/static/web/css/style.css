@@ -1,0 +1,92 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: brown;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: 20px 0;
+}
+
+
+footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 530px;
+    margin-bottom:0px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #faf3f3;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar-left {
+    flex-grow: 1;
+}
+.navbar-right {
+    flex-grow: 1;
+    text-align: right;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: rgb(252, 246, 246);
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2em;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'web/css/bootstrap.min.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'web/css/style.css' %}" />
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="container text-center">
+                <h2>RATION SHOP MANAGEMENT SYSTEM</h2>
+                <p> DISTRICT SUPPLY OFFICER</p>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div  style="background-color: rgb(244, 247, 247)">
+   
+        {% block body %}
+        {% endblock %}
+    </div><br><br><br><br><br><br>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Rationshop Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
