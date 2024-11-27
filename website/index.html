@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Distribution System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            background-color: #fff;
+            color: #2575fc;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #2575fc;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .btn:active {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Public Distribution System Management</h1>
+    <div class="button-container">
+        <a href="{% url 'beneficiary_page' %}" class="btn">Beneficiary</a>
+        <a href="{% url 'admin_page' %}" class="btn">Admin</a>
+        <a href="{% url 'distributor_page' %}" class="btn">Distributor</a>
+    </div>
+</body>
+</html>
